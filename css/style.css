@@ -1,0 +1,42 @@
+
+body {
+    margin: 0 auto;
+    width: 500px;
+    background-color: darkmagenta;
+
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+    background-color: palevioletred;
+    border-radius: 10px;
+
+}
+
+h1 {
+    background-color: bisque;
+    color: coral;
+
+}
+
+nav {
+    background-color: cornsilk;
+    height: 70px;
+
+}
+
+#something-else {
+    border: 5px solid green;
+
+}
+
+.more-content {
+    background-color: papayawhip;
+
+}
+
+section p.more-content {
+    background-color: red;
+    
+}
