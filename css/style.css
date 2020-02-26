@@ -7,7 +7,7 @@
 }
 
 body {
-    width: 960 px;
+    /* width: 960 px; */
     background-color: hsla(300, 2%, 42%, 0.75);
 
 }
@@ -94,3 +94,11 @@ article {
 
 }
 
+/* main {
+    width: 60%;
+
+} */
+/* 
+.left {
+    float: left;
+} */
