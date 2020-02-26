@@ -6,14 +6,15 @@ console.log('This is working!');
 // alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
 
 
-// function beginQuestionaire(){
+//  function beginQuestionaire(){
 //     questionOne();
 //     questionTwo();
 //     questionThree();
 //     questionFour();
 //     questionFive();
+//      issueSix();
 
-// }
+//  }
 
 // function questionOne() {
     
@@ -95,20 +96,59 @@ console.log('This is working!');
 //     }
 // }
 
+// function issueSix() {
 
-// beginQuestionaire();
+//     var secretNumber = Math.floor(Math.random() * 10 + 1);
+//     var guess = '';
+//     var correct = false;
+//     console.log(secretNumber)
 
+//     for(var i = 0; i < 4; i++) {
+//         guess = prompt('Guess a number between 1 and 10!')
+//         guess = parseInt(guess);
 
-// function endingThing() {
-//     alert('Thanks for taking this questionaire about ME, ' + userName + '.')
+//         if (guess === secretNumber) {
+//         alert('Your guess was correct! Great job.')
+//         correct = !correct;
+//         break;
+//     }   
+//         else if (guess == null) {
+//         alert('Quitting game. You\'re not fun.')
+//         break;
+//     }
+//         else if (guess < secretNumber) {
+//         alert('Your guess is too low! Try again.')
+//     }
+//         else if (guess > secretNumber) {
+//         alert('Your guess is too high! Try again.')
+//     }
 // }
-// endingThing();
+
+//     if (!correct) {
+//         alert('You\'ve guessed too many times! Not sure how you didn\'t get it, but that is okay. You are still weclome here.')
+//     }
+
+// }
+    
 
 
 
 
 
+//  beginQuestionaire();
 
+
+//  function endingThank() {
+//      alert('Thanks for taking this questionaire about ME, ' + userName + '.')
+//  }
+//  endingThank(); }
+
+ 
+
+
+// create an element, when hovered a list of all the image sources for each parameter
+// html documentcreateelement - element.setattributes (bojack, path to image)
+// div id=
 
 
 
@@ -125,5 +165,3 @@ console.log('This is working!');
 //     alert('Begone, nerd!')
 
 // look up how to check array parsing, 
-
-// }

@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 10px;
     font-size: 20px;
     font-family: 'Comfortaa';
@@ -7,7 +7,7 @@
 }
 
 body {
-    /* width: 960 px; */
+    width: 960 px;
     background-color: hsla(300, 2%, 42%, 0.75);
 
 }
@@ -45,6 +45,8 @@ footer {
     font-size: 25px;
     text-align: center;
     outline: 3px solid #FBF9DA;
+    clear: both;
+
 
 } 
 
@@ -59,18 +61,22 @@ section {
     margin: 10px;
     padding: 5px;
     border: 10px solid #942E74;
-    width: 60%; 
+    width: 100%; 
     box-shadow: 2px 2px 5px #333333;
 
 }
 
 h2 {
     text-align: center;
-    width: 60%;
+    width: 100%;
     font-size: 25px;
     color: #FBF9DA;
 
 
+}
+
+h4 {
+    font-size: 30px;
 }
 
 main h2 {
@@ -81,7 +87,7 @@ main h2 {
 
 aside {
     width: 30%;
-    /* float: right; */
+    float: right;
 
 }
 
@@ -94,11 +100,16 @@ article {
 
 }
 
-/* main {
-    width: 60%;
-
-} */
-/* 
 .left {
     float: left;
-} */
+    width: 60%;
+
+}
+
+img{
+    display: none
+}
+
+span:hover + img{
+    display: block;
+}
