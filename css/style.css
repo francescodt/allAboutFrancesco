@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
     font-family: 'Comfortaa';
 
@@ -88,24 +88,17 @@ main h2 {
 }
 
 
+aside {
+    width: 30%;
 
-/* the below content is conscripted conciously of one: freecodecamp.org.
-https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+}
 
+article {
+    background-color: #942E74;
+    color: #FBF9DA;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #333333;
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
 }
-  
-#content-wrap {
-    padding-bottom: 2.5rem;    
-}
-  
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem; 
-    
-}
+

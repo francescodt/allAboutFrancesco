@@ -120,4 +120,6 @@ endingThing();
 // } else if (questionOne == answerNo) {
 //     alert('Begone, nerd!')
 
+// look up how to check array parsing, 
+
 // }
