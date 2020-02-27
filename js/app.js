@@ -6,8 +6,8 @@ console.log(userName);
 alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
 
 
-  function beginQuestionaire(){
-    questionOne();
+//   function beginQuestionaire(){
+//     questionOne();
 //     questionTwo();
 //     questionThree();
 //     questionFour();
@@ -190,4 +190,6 @@ var tries = 6;
 //     alert('Begone, nerd!')
 
 // look up how to check array parsing, 
+
+
 

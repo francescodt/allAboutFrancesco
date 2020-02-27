@@ -100,7 +100,7 @@ article {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #333333;
-    margin: 40px;
+    margin: 38px;
 
 }
 
@@ -128,4 +128,65 @@ img{
 span:hover + img{
     display: block;
 
+}
+
+/* Coded with complete and utter help of Michael at https://codepen.io/mpazco/pen/IbiHL */
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+.wrapper{
+  /* width: 325px;
+  height: 50px; */
+  position: absolute;
+  top: 7%;
+  right: 3%;
+  margin-left: -162px;
+  margin-top: -25px;
+}
+
+.icon{
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.47em;
+  line-height: 2em;
+  background-color: #dedede;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 3px 0px 0px #bdbdbd;
+  /* -webkit-transition:background-color 250ms ease 0s;
+  transition:background-color 250ms ease 0s; */
+  margin: 3px;
+}
+
+
+/* .icon:hover{
+  background-color: plum;
+} */
+.icon.facebook:hover{background-color: #3b5998;}
+.twitter:hover{background-color: #00acee;}
+.linkedin:hover{background-color: #0072b1;}
+.email:hover{background-color: plum;}
+
+a{
+  text-decoration: none;
+}
+
+.icon:hover{
+  color: #fff;
+  box-shadow: 3px 3px 0px #686868;
+}
+
+.icon:active{
+  box-shadow: inset 0px 1px 4px #3d3d3d, 0px 0px 0px #bdbdbd;
+  top: 3px;
 }
