@@ -6,13 +6,13 @@ console.log(userName);
 alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
 
 
-  function beginQuestionaire(){
-    questionOne();
-    questionTwo();
-    questionThree();
-    questionFour();
-    questionFive();
-    issueSix();
+//   function beginQuestionaire(){
+//     questionOne();
+//     questionTwo();
+//     questionThree();
+//     questionFour();
+//     questionFive();
+//     issueSix();
     //  issueSeven();
 
 }
@@ -170,10 +170,11 @@ var tries = 6;
 // div id=
 
 
-// Do the point system
+//[] Do the point system
 
-// wrap everything inside the script loading tag nonsense
+//[] wrap everything inside the script loading tag nonsense
 
+//[] write while statements for questions 1-5 so craig can't break your code
 
 
 // var answerYes = ['yes', 'y', 'Yes', 'Y'];

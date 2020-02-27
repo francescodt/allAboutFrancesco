@@ -47,22 +47,22 @@ footer {
     outline: 3px solid #FBF9DA;
     clear: both;
 
-
 } 
 
 
 p {
     color: #FBF9DA;
+
 }
 
 
 section {
     box-sizing: border-box;
-    margin: 10px;
-    padding: 5px;
+    padding: 15px;
     border: 10px solid #942E74;
     width: 100%; 
     box-shadow: 2px 2px 5px #333333;
+    margin-bottom: 70px;
 
 }
 
@@ -71,12 +71,15 @@ h2 {
     width: 100%;
     font-size: 25px;
     color: #FBF9DA;
-
+    font-variant: small-caps;
+    font-weight: bold;
 
 }
 
 h4 {
     font-size: 30px;
+    font-family: 'Pacifico';
+
 }
 
 main h2 {
@@ -86,7 +89,7 @@ main h2 {
 
 
 aside {
-    width: 30%;
+    width: 35%;
     float: right;
 
 }
@@ -97,6 +100,7 @@ article {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #333333;
+    margin: 40px;
 
 }
 
@@ -106,10 +110,22 @@ article {
 
 }
 
+
+li {
+    padding: 7px;
+
+}
+
+
+/* conscripted code courtesy of stackoverflow user: jmore009;
+@ https://stackoverflow.com/questions/27809922/in-html-how-can-you-make-an-image-appear-while-you-are-hovering-over-text */
+
 img{
     display: none
+
 }
 
 span:hover + img{
     display: block;
+
 }
