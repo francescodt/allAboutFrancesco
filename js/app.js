@@ -6,8 +6,8 @@ console.log(userName);
 alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
 
 
-//   function beginQuestionaire(){
-//     questionOne();
+  function beginQuestionaire(){
+    questionOne();
 //     questionTwo();
 //     questionThree();
 //     questionFour();
@@ -24,7 +24,10 @@ function questionOne() {
 
     console.log(answerOne);
  
-    if (answerOne === 'yes' || answerOne === 'y') {
+    // while (answerOne === '')
+    //     alert('Try using Yes or No.')
+    // while(answerOne !== '')
+        if (answerOne === 'yes' || answerOne === 'y') {
         alert('Wrong! I do not enjoy cooperative or competitive cooperative board games.')
     }   else if (answerOne === 'no' || answerOne === 'n') {
         alert('Correct! There are tiers to board-game hierarchy, and some are terrible.')
@@ -134,7 +137,7 @@ function issueSix() {
 function issueSeven() {
 
 var disneyMovies = ['Mulan', 'Moana', 'Hercules',]
-var moviesAnswer = '';
+var moviesAnswer = false;
 var j = 0;
 var tries = 6;
 
