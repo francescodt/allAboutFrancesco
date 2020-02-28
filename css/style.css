@@ -116,6 +116,19 @@ li {
 
 }
 
+.shows img {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+
+}
+
+.music img {
+    position: absolute;
+    top: 640px;
+    right: 30px;
+}
+
 
 /* conscripted code courtesy of stackoverflow user: jmore009;
 @ https://stackoverflow.com/questions/27809922/in-html-how-can-you-make-an-image-appear-while-you-are-hovering-over-text */

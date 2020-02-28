@@ -11,15 +11,15 @@ window.addEventListener('load', (event) => {
 
 
     function beginQuestionaire() {
-        questionOne();
-        questionTwo();
-        questionThree();
-        questionFour();
-        questionFive();
-        issueSix();
-        // issueSeven();
-        issuePoints();
-        endingThank();
+        // questionOne();
+        // questionTwo();
+        // questionThree();
+        // questionFour();
+        // questionFive();
+        // issueSix();
+        // // issueSeven();
+        // issuePoints();
+        // endingThank();
 
     }
 
@@ -44,7 +44,6 @@ window.addEventListener('load', (event) => {
         } else if (answerOne === 'no' || answerOne === 'n') {
             alert('Correct! There are tiers to board-game hierarchy, and some are terrible.')
             totalPoints++;
-            console.log(totalPoints);
         }
     }
 
@@ -61,7 +60,6 @@ window.addEventListener('load', (event) => {
         } if (answerTwo === 'yes' || answerTwo === 'y') {
             alert('Correct. I have two nephews, a neice and another gender undisclosed family member along the way.')
             totalPoints++;
-            console.log(totalPoints);
         } else if (answerTwo === 'no' || answerTwo === 'n') {
             alert('Wrong, Chachi. Sorry, I mean ' + userName + '. I wish you were right though, I am not a fan of kids. ')
         }
@@ -80,7 +78,6 @@ window.addEventListener('load', (event) => {
         } if (answerThree === 'yes' || answerThree === 'y') {
             alert('Correct. Just barely. Also I assume you\'re just guessing with this since the directive was so specific. I\'ve been in a few countries though, but I wouldn\'t say I\'m familiar with them like I am Italy or Canada.')
             totalPoints++;
-            console.log(totalPoints);
         } else if (answerThree === 'no' || answerThree === 'n') {
             alert('Wrong. I\'ve spent some time in Italy, Canada, Spain, and a few other countries that the time spent was much less notable. ')
         }
@@ -99,7 +96,6 @@ window.addEventListener('load', (event) => {
         } if (answerFour === 'yes' || answerFour === 'y') {
             alert('Wrong. Thought the specificity would work this time, huh? Not quite. I only attended 11 last year.')
             totalPoints++;
-            console.log(totalPoints);
         } else if (answerFour === 'no' || answerFour === 'n') {
             alert('Correct! Just barely, though. Honestly trying to name them all is difficult as I think about it. Not due to how much I liked or did not like them, but it\'s actually just super difficult to remember all of that. Notables were: Chvrches, Alt-J, Hippo-campus, Atmosphere. ')
         }
@@ -118,7 +114,6 @@ window.addEventListener('load', (event) => {
         } if (answerFive === 'yes' || answerFive === 'y') {
             alert('Word. That means correct, in case you weren\'t sure. Only thing I really liked about it was that it landed on a year that was easy to remember, 2015.')
             totalPoints++;
-            console.log(totalPoints);
         } else if (answerFive === 'no' || answerFive === 'n') {
             alert('Wrong, though I wish it were different. Everything is all good now, and it has brought a lot of awareness to my life. I donate my hair now, and do a lot of volunteer work because of it. ')
         }
