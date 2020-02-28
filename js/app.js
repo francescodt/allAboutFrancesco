@@ -4,22 +4,22 @@ window.addEventListener('load', (event) => {
     'use strict';
     console.log('This is working!');
 
-    var userName = prompt('Hello! What is your name?');
-    console.log(userName);
-    alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
+    // var userName = prompt('Hello! What is your name?');
+    // console.log(userName);
+    // alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
 
 
 
     function beginQuestionaire() {
-        // questionOne();
-        // questionTwo();
-        // questionThree();
-        // questionFour();
-        // questionFive();
-        // issueSix();
-        // // issueSeven();
-        // issuePoints();
-        // endingThank();
+        questionOne();
+        questionTwo();
+        questionThree();
+        questionFour();
+        questionFive();
+        issueSix();
+        issueSeven();
+        issuePoints();
+        endingThank();
 
     }
 
@@ -39,7 +39,7 @@ window.addEventListener('load', (event) => {
             answerOne = prompt('Do I enjoy all board games?').toLowerCase();
         } if (answerOne === 'yes' || answerOne === 'y') {
             alert('Wrong! I do not enjoy cooperative or competitive cooperative board games.')
-        }   else if (answerOne == null) {
+        } else if (answerOne == null) {
             alert('Quitting game. You\'re not fun.');
         } else if (answerOne === 'no' || answerOne === 'n') {
             alert('Correct! There are tiers to board-game hierarchy, and some are terrible.')
@@ -112,7 +112,7 @@ window.addEventListener('load', (event) => {
             alert('Try using Yes or No.');
             answerFive = prompt('Is this my 5-year anniversary from when I was diagnosed with cancer? ').toLowerCase();
         } if (answerFive === 'yes' || answerFive === 'y') {
-            alert('Word. That means correct, in case you weren\'t sure. Only thing I really liked about it was that it landed on a year that was easy to remember, 2015.')
+            alert('Yep. You got it. Non-Hodgkins Lymphoma Stage 4. A year of chemo wraps that up. Basically I\'m simultaneously the strongest and weakest person you can meet.')
             totalPoints++;
         } else if (answerFive === 'no' || answerFive === 'n') {
             alert('Wrong, though I wish it were different. Everything is all good now, and it has brought a lot of awareness to my life. I donate my hair now, and do a lot of volunteer work because of it. ')
@@ -156,29 +156,30 @@ window.addEventListener('load', (event) => {
     }
 
     function issueSeven() {
-
-        var disneyMovies = ['Mulan', 'Moana', 'Hercules',]
+        var disneyMovies = ['mulan', 'moana', 'hercules'];
         var moviesAnswer = false;
-        var j = 0;
-        var tries = 6;
-
-
-        do {
-            var questionSeven = prompt('What are the top three animated Disney movies?')
-            var answerSeven = questionSeven.toLowerCase();
-        } while (j !== 7)
-        if (disneyMovies.indexOf(answerSeven) >= 0) {
-            alert('You are correct, ' + answerSeven + 'is one of the top three animated Disney movies.');
-            j++;
-            tries--;
-        } else {
-            alert('Sorry, try again. You have' + tries + 'remaining to get three correct answers.');
-
+        for (var i = 0; i < 6; i++) {
+            var moviesMessage = prompt('What is one of the top three animated Disney Movies?').toLowerCase();
+            for (var j = 0; j < disneyMovies.length; j++) {
+                if (disneyMovies[j] === moviesMessage) {
+                    alert('Obviously. Good job though.');
+                    moviesAnswer = true;
+                    totalPoints++;
+                    break;
+                }
+            }
+            if (!moviesAnswer) {
+                alert('Nope. I can\'t believe you guessed that.');
+            } else {
+                break;
+            }
         }
+        alert('The correct answers were Mulan, Moana, and Hercules.')
     }
 
+
     function issuePoints() {
-        alert('You earned' + totalPoints + ' out of 7 total points.');
+        alert('You earned ' + totalPoints + ' out of 7 total points.');
     }
 
     function endingThank() {
@@ -189,23 +190,5 @@ window.addEventListener('load', (event) => {
 
 
 });
-
-
-// create an element, when hovered a list of all the image sources for each parameter
-// html documentcreateelement - element.setattributes (bojack, path to image)
-// div id=
-
-
-// var answerYes = ['yes', 'y', 'Yes', 'Y'];
-// var answerNo = ['no', 'n', 'No', 'N'];
-
-// var questionOne = prompt('So, ' + userName + ' are you learning to code?'); 
-// if (questionOne == answerYes) {
-//     alert('Fantastic! So am I.')
-// } else if (questionOne == answerNo) {
-//     alert('Begone, nerd!')
-
-// look up how to check array parsing, 
-
 
 
