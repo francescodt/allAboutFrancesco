@@ -4,9 +4,9 @@ window.addEventListener('load', (event) => {
     'use strict';
     console.log('This is working!');
 
-    // var userName = prompt('Hello! What is your name?');
-    // console.log(userName);
-    // alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
+    var userName = prompt('Hello! What is your name?');
+    console.log(userName);
+    alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
 
 
 
