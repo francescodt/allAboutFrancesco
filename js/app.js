@@ -4,9 +4,10 @@ window.addEventListener('load', (event) => {
     'use strict';
     console.log('This is working!');
 
-    // var userName = prompt('Hello! What is your name?');
-    // console.log(userName);
-    // alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
+    var userName = prompt('Hello! What is your name?');
+    console.log(userName);
+    alert('Hello, ' + userName + '. Welcome to Francesco\'s wonderful and in-progress site.');
+
 
 
     function beginQuestionaire() {
@@ -16,13 +17,14 @@ window.addEventListener('load', (event) => {
         questionFour();
         questionFive();
         issueSix();
-        //  issueSeven();
-        totalpoints();
+        // issueSeven();
+        issuePoints();
+        endingThank();
 
     }
 
-    var pointsEarned = 0;
-    
+    var totalPoints = 0;
+
     var possibleAnswers = ['yes', 'y', 'no', 'n'];
 
     function questionOne() {
@@ -37,9 +39,12 @@ window.addEventListener('load', (event) => {
             answerOne = prompt('Do I enjoy all board games?').toLowerCase();
         } if (answerOne === 'yes' || answerOne === 'y') {
             alert('Wrong! I do not enjoy cooperative or competitive cooperative board games.')
+        }   else if (answerOne == null) {
+            alert('Quitting game. You\'re not fun.');
         } else if (answerOne === 'no' || answerOne === 'n') {
             alert('Correct! There are tiers to board-game hierarchy, and some are terrible.')
-            pointsEarned = pointsEarned + 1;
+            totalPoints++;
+            console.log(totalPoints);
         }
     }
 
@@ -55,7 +60,8 @@ window.addEventListener('load', (event) => {
             answerTwo = prompt('Do I have any neices or nephews?').toLowerCase();
         } if (answerTwo === 'yes' || answerTwo === 'y') {
             alert('Correct. I have two nephews, a neice and another gender undisclosed family member along the way.')
-            pointsEarned = pointsEarned + 1;
+            totalPoints++;
+            console.log(totalPoints);
         } else if (answerTwo === 'no' || answerTwo === 'n') {
             alert('Wrong, Chachi. Sorry, I mean ' + userName + '. I wish you were right though, I am not a fan of kids. ')
         }
@@ -73,7 +79,8 @@ window.addEventListener('load', (event) => {
             answerThree = prompt('Have I been out of the country at least 8 times?!').toLowerCase();
         } if (answerThree === 'yes' || answerThree === 'y') {
             alert('Correct. Just barely. Also I assume you\'re just guessing with this since the directive was so specific. I\'ve been in a few countries though, but I wouldn\'t say I\'m familiar with them like I am Italy or Canada.')
-            pointsEarned = pointsEarned + 1;
+            totalPoints++;
+            console.log(totalPoints);
         } else if (answerThree === 'no' || answerThree === 'n') {
             alert('Wrong. I\'ve spent some time in Italy, Canada, Spain, and a few other countries that the time spent was much less notable. ')
         }
@@ -91,7 +98,8 @@ window.addEventListener('load', (event) => {
             answerFour = prompt('Did I go to at least 12 concerts last year?').toLowerCase();
         } if (answerFour === 'yes' || answerFour === 'y') {
             alert('Wrong. Thought the specificity would work this time, huh? Not quite. I only attended 11 last year.')
-            pointsEarned = pointsEarned + 1;
+            totalPoints++;
+            console.log(totalPoints);
         } else if (answerFour === 'no' || answerFour === 'n') {
             alert('Correct! Just barely, though. Honestly trying to name them all is difficult as I think about it. Not due to how much I liked or did not like them, but it\'s actually just super difficult to remember all of that. Notables were: Chvrches, Alt-J, Hippo-campus, Atmosphere. ')
         }
@@ -109,7 +117,8 @@ window.addEventListener('load', (event) => {
             answerFive = prompt('Is this my 5-year anniversary from when I was diagnosed with cancer? ').toLowerCase();
         } if (answerFive === 'yes' || answerFive === 'y') {
             alert('Word. That means correct, in case you weren\'t sure. Only thing I really liked about it was that it landed on a year that was easy to remember, 2015.')
-            pointsEarned = pointsEarned + 1;
+            totalPoints++;
+            console.log(totalPoints);
         } else if (answerFive === 'no' || answerFive === 'n') {
             alert('Wrong, though I wish it were different. Everything is all good now, and it has brought a lot of awareness to my life. I donate my hair now, and do a lot of volunteer work because of it. ')
         }
@@ -128,8 +137,9 @@ window.addEventListener('load', (event) => {
 
             if (guess === secretNumber) {
                 alert('Your guess was correct! Great job.');
+                // Below is Ian smith's doing
                 correct = !correct;
-                pointsEarned = pointsEarned + 1;
+                totalPoints++;
                 break;
             }
             else if (guess == null) {
@@ -172,18 +182,16 @@ window.addEventListener('load', (event) => {
         }
     }
 
-    function totalPoints() {
-        alert('You earned' + pointsEarned + '.')
+    function issuePoints() {
+        alert('You earned' + totalPoints + ' out of 7 total points.');
     }
-
-
-
-    beginQuestionaire();
 
     function endingThank() {
         alert('Thanks for taking this questionaire about ME, ' + userName + '.');
     }
-    endingThank();
+
+    beginQuestionaire();
+
 
 });
 
@@ -191,14 +199,6 @@ window.addEventListener('load', (event) => {
 // create an element, when hovered a list of all the image sources for each parameter
 // html documentcreateelement - element.setattributes (bojack, path to image)
 // div id=
-
-
-//[] Do the point system
-
-//[] wrap everything inside the script loading tag nonsense
-
-//[x] write while statements for questions 1-5 so craig can't break your code
-//[] write code so if someone tries to cancel they can leave
 
 
 // var answerYes = ['yes', 'y', 'Yes', 'Y'];
