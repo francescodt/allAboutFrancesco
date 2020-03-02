@@ -14,7 +14,7 @@ body {
 
 header { 
     background-color: #942E74;
-    outline: 3px solid #FBF9DA;
+    outline: 3px solid #CA7CB2;
     height: 80px;
 
 }
@@ -44,7 +44,7 @@ footer {
     background-color: #942E74;
     font-size: 25px;
     text-align: center;
-    outline: 3px solid #FBF9DA;
+    outline: 3px solid #CA7CB2;
     clear: both;
 
 } 
